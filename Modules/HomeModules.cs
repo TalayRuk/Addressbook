@@ -1,8 +1,8 @@
 using Nancy;
-using Addressbook.Objects;
+using Contact.Objects;
 using System.Collections.Generic;
 
-namespace Addressbook
+namespace Contact
 {
   public class HomeModule : NancyModule
   {
@@ -10,9 +10,12 @@ namespace Addressbook
     {
       Get["/"] =_= View["homepage.cshtml"];
       Get["/add_new_contact"] =_=> {
-          return View ["add_new_contact.cshtml"];
+          return View["add_new_contact.cshtml"];
       };
-
+      Post["/contact_created"] = _ => {
+          Contact newContact = newContact(Request.Form["new-name"], Request.Form["new-phoneNumber"], Request.Form["new-address"]);
+          List<Contact>
+      }
 
     }
   }

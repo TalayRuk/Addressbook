@@ -19,7 +19,9 @@ _**By Vichitra Pool (Note) on September 11th, 2016_
 |Allow user to input name in uppercase letters, the output will be uppercase | ADAM | ADAM
 |Allow user to input name in lowercase letters, the output will be uppercase| adam | ADAM
 |Allow user to input number >=0 for phone number | 1 | 1
-|user can save the contact to the list| click save button |contact_created page will open and show "You created a contact!", the new-added contact; name, phone number and address are displayed on this page.
+|user can save the contact to the list| click save button |contact_created page will open and show "Your new contact has been created!", the new-added contact; name, phone number and address are displayed on this page.
+|On contact_created page user has a choice to view all contact or add more contact | click on view all your contact link | view all contact page will open.
+|On contact_created page can add more contact | click on add new contact link | add_new_contact page will open. 
 |On the all_contacts_deleted page, user can go back to the homepage | click Homepage link | homepage page will be opened.
 |On the all_contacts_deleted page, user can also add new contact | click add new contact link | add_new_contact form page will open
 |If there isn't any contact in the address book, yet | address list = 0 | "There is no contact in the address book, please add new contact (link)."
