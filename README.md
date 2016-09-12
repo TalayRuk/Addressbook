@@ -16,8 +16,8 @@ _**By Vichitra Pool (Note) on September 11th, 2016_
 |--- | :---: | :---: |
 |user can view all contacts on homepage page | click view all contacts click here link | view_all_contacts page will open and display the list of all saved contacts.
 |user can add new contact to the address book from homepage | click add new contact link | add_new_contact form page will open.
-|Allow user to input name in uppercase letters, the output will be uppercase | ADAM | ADAM
-|Allow user to input name in lowercase letters, the output will be uppercase| adam | ADAM
+|Allow user to input name in uppercase letters, the output will be lowercase | ADAM | adam
+|Allow user to input name in lowercase letters, the output will be lowercase| adam | adam
 |Allow user to input number >=0 for phone number | 1 | 1
 |user can add the contact to the list| click Add button |contact_created page will open and show "Your new contact has been created!", the new-added contact; name, phone number and address are displayed on this page.
 |On contact_created page user has a choice to view all contact or add more contact | click on view all your contact link | view all contact page will open.
