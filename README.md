@@ -14,14 +14,16 @@ _**By Vichitra Pool (Note) on September 11th, 2016_
 ## Behavior Driven Development
 |Behavior | input | output|
 |--- | :---: | :---: |
-|If there isn't any contact in the address book | address list = 0 | "There is no contact in the address book, please add new contact."
-|user can add new contact to the address book | click add new contact button | form page will appear.
+|user can add contact or view the existing contact on index page | click view all contacts button | view_all_contacts page will open and display the list of all saved contacts.
+|If there isn't any contact in the address book, yet | address list = 0 | "There is no contact in the address book, please add new contact (link)."
+|user can add new contact to the address book from index | click add new contact button | add_new_contact form page will open.
 |Allow user to input name in uppercase letters, the output will be uppercase | ADAM | ADAM
 |Allow user to input name in lowercase letters, the output will be uppercase| adam | ADAM
 |Allow user to input number >=0 for phone number | 1 | 1
-|user can save the contact to the list| click save button | contact is saved.
-|user can view all contacts in the address book | click view contacts button | view all contacts list page will open.
-|user can delete the existing contact | click delete button | selected address will be deleted.
+|user can save the contact to the list| click save button |contact_created page will open and show "You created a contact!", the new-added contact; name, phone number and address are displayed on this page.
+|user can choose to view all contacts from contact_created page | click view all contacts link | view_all_contacts page will open and display the list of all saved contacts.
+|user can delete the existing contact | click clear all button | all contacts will be deleted and contacts_deleted page will open with message "Address book Cleared!"
+|On the contacts_deleted page, user can go back to the index page | click back to index page | index page will be opened.
 
 ## Setup/Installation Requirements
 1. Open PowerShell
