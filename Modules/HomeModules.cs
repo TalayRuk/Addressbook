@@ -1,5 +1,5 @@
 using Nancy;
-using Addressbok.Objects;
+using Addressbook.Objects;
 
 namespace Addressbook
 {
