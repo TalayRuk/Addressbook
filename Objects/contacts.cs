@@ -9,7 +9,7 @@ namespace AddressBook.Objects
     private string _phoneNumber;
     private string _address;
     private static List<Contact> _instances = new List<Contact> {};
-    private List<Contact> _contacts;
+    // private List<Contact> _contacts;
 
   //Constructor
     public Contact(string Name, string PhoneNumber, string Address)
@@ -17,8 +17,8 @@ namespace AddressBook.Objects
       _name = Name;
       _phoneNumber = PhoneNumber;
       _address = Address;
-      _instances.Add(this);
-      _contacts = new List<Contact>{};
+      // _instances.Add(this);
+      // _contacts = new List<Contact>{};
     }
     public string GetName()
     {
@@ -48,9 +48,9 @@ namespace AddressBook.Objects
     {
       return _instances;
     }
-    public void Add(Contact newContact)
+    public void Save()
     {
-      _instances.Add(newContact);
+      _instances.Add(this);
     }
     public static void ClearAll()
     {

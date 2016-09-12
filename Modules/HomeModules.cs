@@ -16,7 +16,7 @@ namespace AddressBook
       };
       Post["/contact_created"] = _ => {
         Contact newContact = new Contact(Request.Form["new-name"], Request.Form["new-phoneNumber"], Request.Form["new-address"]);
-        newContact.Add(newContact);
+        newContact.Save();
         return View["contact_created.cshtml", newContact];
       };
       Get["/view_all_contacts"] = _ => {
