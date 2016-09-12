@@ -8,7 +8,6 @@ namespace AddressBook.Objects
     private string _name;
     private string _phoneNumber;
     private string _address;
-    private int _id;
     private static List<Contact> _instances = new List<Contact> {};
     private List<Contact> _contacts;
 
@@ -18,8 +17,8 @@ namespace AddressBook.Objects
       _name = Name;
       _phoneNumber = PhoneNumber;
       _address = Address;
-      _contacts = new List<Contact>{};
       _instances.Add(this);
+      _contacts = new List<Contact>{};
       _id = _instances.Count;
     }
     public string GetName()
@@ -46,21 +45,13 @@ namespace AddressBook.Objects
     {
       _address = newAddress;
     }
-    public int GetId()
-    {
-      return _id;
-    }
     public static List<Contact> GetAll()
     {
       return _instances;
     }
-    public void AddContact(Contact newContact)
+    public void Add(Contact newContact)
     {
       _instances.Add(newContact);
-    }
-    public static Contact Find(int searchId)
-    {
-      return _instances[searchId -1];
     }
     public static void ClearAll()
     {
