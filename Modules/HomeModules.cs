@@ -1,8 +1,8 @@
 using Nancy;
-using Contact.Objects;
+using AddressBook.Objects;
 using System.Collections.Generic;
 
-namespace Contact
+namespace AddressBook
 {
   public class HomeModule : NancyModule
   {
@@ -19,6 +19,7 @@ namespace Contact
         List<Contact> contactList = Contact.GetAll();
         return View["contact_created.cshtml", newContact];
       };
+      Get[]
 
     }
   }
