@@ -19,7 +19,6 @@ namespace AddressBook.Objects
       _address = Address;
       _instances.Add(this);
       _contacts = new List<Contact>{};
-      _id = _instances.Count;
     }
     public string GetName()
     {
