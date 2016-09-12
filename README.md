@@ -24,7 +24,11 @@ _**By Vichitra Pool (Note) on September 11th, 2016_
 |user can delete the existing contact | click delete button | selected address will be deleted.
 
 ## Setup/Installation Requirements
-1. [click here to open.](http://localhost:5004)
+1. Open PowerShell
+2. >git clone https://github.com/TalayRuk/Addressbook.git
+3. >cd Addressbook
+4. >dnx kestrel
+1. open [http://localhost:5004](http://localhost:5004) on Chrome web browser
 
 
 ## Known Bugs
@@ -35,8 +39,11 @@ _Contact me at vjde28@gmail.com_
 
 ## Technologies Used
 
-1. NANCY
-2. OBJECT-ORIENTED C#
+1. HTML
+2. NANCY
+3. RAZOR
+4. OBJECT-ORIENTED C#
+
 
 ## License
 
