@@ -16,10 +16,17 @@ namespace AddressBook
       };
       Post["/contact_created"] = _ => {
         var newContact = newContact(Request.Form["new-name"], Request.Form["new-phoneNumber"], Request.Form["new-address"]);
-        List<Contact> contactList = Contact.GetAll();
-        return View["contact_created.cshtml", newContact];
+        var allContact = Contact.GetAll();
+        return View["contact_created.cshtml", allContact];
       };
-      Get[]
+      Get["/view_all_contacts"] = _ => {
+        List<Contact> allContacts = Contact.GetAll();
+        return View ["view_all_contacts.cshtml", allContacts];
+      }
+      Post["/all_contacts_deleted"] = _ => {
+        Contact.ClearAll();
+        return View["all_contacts_deleted.cshtml"]
+      }
 
     }
   }

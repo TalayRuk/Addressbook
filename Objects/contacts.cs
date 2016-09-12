@@ -48,11 +48,11 @@ namespace AddressBook.Objects
     {
       return _instances;
     }
-    public void Save(Contact newContact)
+    public void AddContact(Contact newContact)
     {
       _instances.Add(newContact);
     }
-    public static void DeleteAll()
+    public static void ClearAll()
     {
       _instances.Clear();
     }
