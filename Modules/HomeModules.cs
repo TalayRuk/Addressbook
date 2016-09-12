@@ -19,7 +19,7 @@ namespace AddressBook
         string phoneNumber = (Request.Form["new-phoneNumber"]);
         string Address = (Request.Form["new-address"]);
         Contact newContact = new Contact(Name, PhoneNumber, Address);
-        newContact.Add();
+        newContact.Add(Contact newContact);
         return View["contact_created.cshtml", newContact];
       };
       Get["/view_all_contacts"] = _ => {
