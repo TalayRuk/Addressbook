@@ -20,11 +20,11 @@ _**By Vichitra Pool (Note) on September 11th, 2016_
 |Allow user to input name in lowercase letters, the output will be uppercase| adam | ADAM
 |Allow user to input number >=0 for phone number | 1 | 1
 |user can save the contact to the list| click save button |contact_created page will open and show "You created a contact!", the new-added contact; name, phone number and address are displayed on this page.
+|On the all_contacts_deleted page, user can go back to the homepage | click Homepage link | homepage page will be opened.
+|On the all_contacts_deleted page, user can also add new contact | click add new contact link | add_new_contact form page will open
 |If there isn't any contact in the address book, yet | address list = 0 | "There is no contact in the address book, please add new contact (link)."
 |user can choose to view all contacts from contact_created page | click view all contacts link | view_all_contacts page will open and display the list of all saved contacts.
 |user can delete the existing contact | click clear all button | all contacts will be deleted and all_contacts_deleted page will open with message "You have DELETED ALL CONTACTS in your Address book!"
-|On the all_contacts_deleted page, user can go back to the homepage | click Homepage link | homepage page will be opened.
-|On the all_contacts_deleted page, user can also add new contact | click add new contact link | add_new_contact form page will open
 
 ## Setup/Installation Requirements
 1. Open PowerShell
