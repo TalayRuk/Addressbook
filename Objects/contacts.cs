@@ -6,19 +6,21 @@ namespace AddressBook.Objects
   {
     //variable
     private string _name;
-    private int _phoneNumber;
+    private string _phoneNumber;
     private string _address;
+    private int _id;
     private static List<Contact> _instances = new List<Contact> {};
     private List<Contact> _contacts;
 
   //Constructor
-    public Contact(string Name, int PhoneNumber, string Address)
+    public Contact(string Name, string PhoneNumber, string Address)
     {
       _name = Name;
       _phoneNumber = PhoneNumber;
       _address = Address;
       _contacts = new List<Contact>{};
       _instances.Add(this);
+      _id = _instances.Count;
     }
     public string GetName()
     {
@@ -28,11 +30,11 @@ namespace AddressBook.Objects
     {
       _name = newName;
     }
-    public int GetPhoneNumber()
+    public string GetPhoneNumber()
     {
       return _phoneNumber;
     }
-    public void SetPhoneNumber(int newPhoneNumber)
+    public void SetPhoneNumber(string newPhoneNumber)
     {
       _phoneNumber = newPhoneNumber;
     }
@@ -44,6 +46,10 @@ namespace AddressBook.Objects
     {
       _address = newAddress;
     }
+    public int GetId()
+    {
+      return _id;
+    }
     public static List<Contact> GetAll()
     {
       return _instances;
@@ -51,6 +57,10 @@ namespace AddressBook.Objects
     public void AddContact(Contact newContact)
     {
       _instances.Add(newContact);
+    }
+    public static Contact Find(int searchId)
+    {
+      return _instances[searchId -1];
     }
     public static void ClearAll()
     {
